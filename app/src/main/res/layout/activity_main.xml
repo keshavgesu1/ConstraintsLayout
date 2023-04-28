@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextText8"
+        android:id="@+id/firstName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -17,17 +17,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText9"
+        android:id="@+id/lastName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="last Name"
         android:inputType="text"
-        app:layout_constraintStart_toEndOf="@+id/editTextText8"
+        app:layout_constraintStart_toEndOf="@+id/firstName"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText10"
+        android:id="@+id/dob"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -35,27 +35,27 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText8" />
+        app:layout_constraintTop_toBottomOf="@+id/firstName" />
 
     <EditText
-        android:id="@+id/editTextText11"
+        android:id="@+id/country"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Country"
         android:inputType="text"
-        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/nextButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText10" />
+        app:layout_constraintTop_toBottomOf="@+id/dob" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/nextButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Next Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/editTextText11"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText10" />
+        app:layout_constraintStart_toEndOf="@+id/country"
+        app:layout_constraintTop_toBottomOf="@+id/dob" />
 </androidx.constraintlayout.widget.ConstraintLayout>
